@@ -14,9 +14,9 @@
         #contenedor {
             display: flex;/**/
             flex-wrap: wrap;
+            border: 2px solid red;
         }
         .servicio {
-            border: 2px solid red;
             width: 33%;
             text-align: center;
         }
@@ -27,6 +27,36 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             color: brown;
+        }
+        h1 {
+            padding-bottom: 3%;
+        }
+        footer {
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            display: flex; /*Ocupa el espacio necesario*/
+            flex-wrap: wrap; /*Si es necesario se rompe la condición*/
+            padding: 20px;
+        }
+        footer h2 {
+            font-size: 1.1em;
+        }
+        #aviso {
+            width: 80%;
+            padding-right: 20px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        #redes {
+            width: 20%;
+            text-align: right;
+        }
+        #copyright {
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid white;
+            padding-top: 10px;
         }
         @media (max-width:600px) {
             .servicio {
@@ -57,18 +87,33 @@
                 <p>App móviles</p>
             </div>
             <div class="servicio">
-                <img src="img/asistencia.png"alt="">
-                <p>Servicio técnico</p>
+                <img src="img/drone.jpg"alt="">
+                <p>Drones</p>
             </div>
             <div class="servicio">
-                <img src="img/asistencia.png" alt="">
-                <p>Servicio técnico</p>
+                <img src="img/web.jfif" alt="">
+                <p>Diseño Web</p>
             </div>
             <div class="servicio">
-                <img src="img/asistencia.png" alt="">
-                <p>Servicio técnico</p>
+                <img src="img/soluciones.jpg" alt="">
+                <p>Soluciones</p>
             </div>
         </div>
     </section>
+    <footer> <!--podemos crear section en lugar de div-->
+        <div id="aviso">
+            <h2>Aviso</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ad laborum a facilis, aut ullam placeat quod impedit recusandae expedita saepe rem accusamus ipsam ipsa fuga minus animi tenetur esse! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis voluptate aut aliquid, porro provident quod ducimus quasi dolores aliquam, praesentium sed iure laborum eius minima nobis ea, quia ut tempore?</p>
+        </div>
+        <div id="redes">
+            <h2>Enlaces</h2>
+            <p>Twitter</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
+        </div>
+        <div id="copyright">
+            &copy; IES Virrey Morcillo 2024
+        </div>
+    </footer>
 </body>
 </html>
